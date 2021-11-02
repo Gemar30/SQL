@@ -1,0 +1,6 @@
+/* Sampling Error */
+SELECT DATE_PART('month',book_date) AS month,
+SUM(total_amount) as total_sales
+FROM bookings
+GROUP BY month
+ORDER BY month
